@@ -1,6 +1,9 @@
 name: 'Test'
 
-on: [ pull_request, push ]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
 
 jobs:
   test:
@@ -14,7 +17,7 @@ jobs:
       - name: 'Checkout repository'
         uses: actions/checkout@v3
 
-      # Use specific version of Node.js
+      # Uses specific version of Node.js
       - name: 'Use Node.js v${{ matrix.node-version }}'
         uses: actions/setup-node@v3
         with:
