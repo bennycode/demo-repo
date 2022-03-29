@@ -30,6 +30,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: 'Run tests'
         run: |
-          tsc --noEmit
           npm install
+          tsc --noEmit
           npm test
