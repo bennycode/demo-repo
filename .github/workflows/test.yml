@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Runs a single command using the runners shell
+      # Runs commands using the runners shell
       - name: 'Run tests'
         run: |
           npm install
