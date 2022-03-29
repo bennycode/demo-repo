@@ -26,4 +26,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: 'Run tests'
-        run: npm test
+        run: |
+          tsc --noEmit
+          npm install
+          npm test
