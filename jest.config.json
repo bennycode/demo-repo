@@ -1,0 +1,8 @@
+{
+  "collectCoverage": false,
+  "coverageReporters": ["html", "lcov", "text"],
+  "preset": "ts-jest",
+  "setupFilesAfterEnv": [],
+  "testEnvironment": "node",
+  "testRegex": "\\.test\\.tsx?$"
+}
